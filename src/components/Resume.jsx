@@ -12,7 +12,7 @@ const Resume = () => {
     try {
       // Create a link element to trigger download
       const link = document.createElement('a')
-      link.href = '/NavyanthReddy.github.io/resume/Navyanth_Bollareddy_Resume.pdf'
+      link.href = '/resume/Navyanth_Bollareddy_Resume.pdf'
       link.download = 'Navyanth_Bollareddy_Resume.pdf'
       link.target = '_blank'
       document.body.appendChild(link)
@@ -22,14 +22,14 @@ const Resume = () => {
     } catch (error) {
       console.error('Download failed:', error)
       // Fallback: open in new tab
-      window.open('/NavyanthReddy.github.io/resume/Navyanth_Bollareddy_Resume.pdf', '_blank')
+      window.open('/resume/Navyanth_Bollareddy_Resume.pdf', '_blank')
     }
   }
 
   const handleView = () => {
     try {
       // Open resume in new tab
-      window.open('/NavyanthReddy.github.io/resume/Navyanth_Bollareddy_Resume.pdf', '_blank')
+      window.open('/resume/Navyanth_Bollareddy_Resume.pdf', '_blank')
       console.log('Opening resume in new tab')
     } catch (error) {
       console.error('Failed to open resume:', error)
