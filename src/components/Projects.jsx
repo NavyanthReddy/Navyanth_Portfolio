@@ -11,12 +11,12 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Movie Booking System',
-      description: 'Full-stack movie booking web application built with MERN stack. Features movie browsing, real-time search, seat selection, ticket booking, and responsive design with Tailwind CSS.',
-      image: <FaCode />,
-      technologies: ['React', 'Next.js', 'MongoDB', 'Express', 'Tailwind CSS'],
-      github: 'https://github.com/NavyanthReddy/MovieBookingSystem',
-      live: 'https://github.com/NavyanthReddy/MovieBookingSystem',
+      title: 'Wellness Tracker',
+      description: 'Comprehensive health and wellness tracking application built with TypeScript. Features activity monitoring, health metrics tracking, goal setting, and progress visualization.',
+      image: <FaMobile />,
+      technologies: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'Chart.js'],
+      github: 'https://github.com/NavyanthReddy/Wellness-Tracker',
+      live: 'https://polite-otter-192c82.netlify.app',
       featured: true
     },
     {
@@ -31,12 +31,12 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Wellness Tracker',
-      description: 'Comprehensive health and wellness tracking application built with TypeScript. Features activity monitoring, health metrics tracking, goal setting, and progress visualization.',
-      image: <FaMobile />,
-      technologies: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'Chart.js'],
-      github: 'https://github.com/NavyanthReddy/Wellness-Tracker',
-      live: 'https://polite-otter-192c82.netlify.app',
+      title: 'Movie Booking System',
+      description: 'Full-stack movie booking web application built with MERN stack. Features movie browsing, real-time search, seat selection, ticket booking, and responsive design with Tailwind CSS.',
+      image: <FaCode />,
+      technologies: ['React', 'Next.js', 'MongoDB', 'Express', 'Tailwind CSS'],
+      github: 'https://github.com/NavyanthReddy/MovieBookingSystem',
+      live: '#',
       featured: true
     },
     {
@@ -115,9 +115,11 @@ const Projects = () => {
                     <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
                       <FaGithub />
                     </a>
-                    <a href={project.live} className="project-link" target="_blank" rel="noopener noreferrer">
-                      <FaExternalLinkAlt />
-                    </a>
+                    {project.live && project.live !== '#' && (
+                      <a href={project.live} className="project-link" target="_blank" rel="noopener noreferrer">
+                        <FaExternalLinkAlt />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

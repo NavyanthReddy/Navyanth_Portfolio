@@ -9,9 +9,9 @@ const About = () => {
 
   const stats = [
     { number: '2+', label: 'Years Experience' },
-    { number: '17+', label: 'Projects Completed' },
-    { number: '15+', label: 'Technologies' },
-    { number: '2025', label: 'Expected Graduation' }
+    { number: '3.6/4.0', label: 'M.S. GPA' },
+    { number: '8.6/10.0', label: 'B.Tech GPA' },
+    { number: '2025', label: 'M.S. Graduated' }
   ]
 
   return (
@@ -34,18 +34,20 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p>
-              I'm a passionate Software Engineer and AI/ML Enthusiast with 2+ years of experience in full-stack development 
-              and machine learning. Currently pursuing my Master's degree in Computer Science at the University of Georgia, 
-              expected to graduate in 2025. Based in Austin, TX, I'm US work authorized and open to remote and onsite opportunities.
+              I'm a passionate Software Engineer with 2+ years of experience in full-stack development, currently working at Comcast 
+              in Englewood Cliffs, NJ. I recently completed my Master's degree in Computer Science at the University of Georgia (GPA: 3.6/4.0) 
+              and hold a B.Tech in Computer Science Engineering from SRM Institute of Science and Technology (GPA: 8.6/10.0). 
+              Based in New Jersey, I'm US work authorized and open to remote and onsite opportunities.
             </p>
             <p>
-              My expertise spans across web development, machine learning model deployment, cloud computing, and software engineering. 
-              I specialize in building scalable applications using React, Node.js, Python, and deploying ML models with TensorFlow and Keras. 
-              I love creating innovative solutions that solve real-world problems and continuously learning new technologies.
+              My expertise spans across full-stack web development, cloud computing, DevOps, and software engineering. 
+              I specialize in building scalable applications using React, Spring Boot, Node.js, and PostgreSQL, with experience in 
+              AWS cloud services, Docker, Kubernetes, and CI/CD pipelines. I have a proven track record of optimizing performance, 
+              implementing secure authentication systems, and delivering high-quality software solutions.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new AI/ML techniques, contributing to open-source projects, 
-              or working on personal projects that challenge my skills and expand my knowledge in emerging technologies.
+              When I'm not coding, you can find me contributing to open-source projects, exploring new technologies, 
+              or working on innovative projects that challenge my skills and expand my knowledge in software engineering and cloud architecture.
             </p>
           </motion.div>
 
