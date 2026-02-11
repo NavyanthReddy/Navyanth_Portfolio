@@ -9,32 +9,14 @@ const Resume = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   const handleDownload = () => {
-    try {
-      // Create a link element to trigger download
-      const link = document.createElement('a')
-      link.href = '/resume/Navyanth_Bollareddy_Resume.pdf'
-      link.download = 'Navyanth_Bollareddy_Resume.pdf'
-      link.target = '_blank'
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
-      console.log('Download initiated for resume')
-    } catch (error) {
-      console.error('Download failed:', error)
-      // Fallback: open in new tab
-      window.open('/resume/Navyanth_Bollareddy_Resume.pdf', '_blank')
-    }
+    const link = document.createElement('a')
+    link.href = '/resume/NavyanthBollareddy_Resume.pdf'
+    link.download = 'NavyanthBollareddy_Resume.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
-  const handleView = () => {
-    try {
-      // Open resume in new tab
-      window.open('/resume/Navyanth_Bollareddy_Resume.pdf', '_blank')
-      console.log('Opening resume in new tab')
-    } catch (error) {
-      console.error('Failed to open resume:', error)
-    }
-  }
 
   const resumeHighlights = [
     {
@@ -155,15 +137,17 @@ const Resume = () => {
                 Download Resume
               </motion.button>
               
-              <motion.button
+              <motion.a
+                href="/resume/NavyanthBollareddy_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-secondary"
-                onClick={handleView}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaEye />
                 View Resume
-              </motion.button>
+              </motion.a>
             </div>
 
             <div className="resume-highlights">
