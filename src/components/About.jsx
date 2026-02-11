@@ -32,7 +32,7 @@ const About = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
         >
           <p className="lead">
-          I'm a software engineer leveraging AI at Comcast building systems that process millions of requests daily. My work spans fullstack development—React, TypeScript, Spring Boot, Java—and machine learning with TensorFlow and PyTorch.
+          I'm a software engineer leveraging AI at Comcast building systems that process millions of requests daily. My work spans fullstack development: React, TypeScript, Spring Boot, Java and machine learning with TensorFlow and PyTorch.
           I've published research on gesture-controlled interfaces in Springer, built an AI-powered code review platform. I solve the problems that actually matter: distributed systems that don't break, ML models that work in production, and databases that scale under real load.
           What drives me: hard technical problems, clean architecture, and shipping code that matters. I'm looking for roles where engineering excellence isn't optional and the technical bar stays high.
           Currently based in New Jersey, open to remote opportunities and relocation.
