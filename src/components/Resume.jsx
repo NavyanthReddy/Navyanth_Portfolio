@@ -23,9 +23,9 @@ const Resume = () => {
       icon: FaGraduationCap,
       title: 'Education',
       items: [
-        'M.S. Computer Science - University of Georgia (2025)',
+        'M.S. Computer Science - University of Georgia (May 2025)',
         'B.Tech in Computer Science Engineering',
-        'GPA: 3.8/4.0'
+        'GPA: 3.6/4.0'
       ]
     },
     {
