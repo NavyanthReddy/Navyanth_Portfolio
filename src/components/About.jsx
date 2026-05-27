@@ -8,9 +8,10 @@ const About = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   const techStack = [
-    'React', 'TypeScript', 'JavaScript', 'Java', 'Spring Boot', 'Node.js',
-    'PostgreSQL', 'MongoDB', 'Redis', 'AWS', 'Docker', 'Kubernetes',
-    'Python', 'TensorFlow', 'PyTorch', 'Git', 'CI/CD'
+    'Java 17', 'Spring Boot', 'Kotlin', 'Microservices', 'Spring Security',
+    'Hibernate', 'JPA', 'REST APIs', 'DynamoDB', 'MongoDB', 'MySQL',
+    'AWS', 'Docker', 'Kubernetes', 'Jenkins', 'React', 'TypeScript',
+    'JWT', 'OAuth 2.0', 'Redis', 'Git'
   ]
 
   return (
@@ -32,10 +33,13 @@ const About = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
         >
           <p className="lead">
-          I'm a software engineer leveraging AI at Comcast building systems that process millions of requests daily. My work spans fullstack development: React, TypeScript, Spring Boot, Java and machine learning with TensorFlow and PyTorch.
-          I've published research on gesture-controlled interfaces in Springer, built an AI-powered code review platform. I solve the problems that actually matter: distributed systems that don't break, ML models that work in production, and databases that scale under real load.
-          What drives me: hard technical problems, clean architecture, and shipping code that matters. I'm looking for roles where engineering excellence isn't optional and the technical bar stays high.
-          Currently based in New Jersey, open to remote opportunities and relocation.
+            Oracle Certified Java SE 17 Developer with 3+ years of experience building secure, scalable applications using Java 17, Spring Boot, and microservices. I currently work at AWS on a caching platform for Organizations data, enabling internal support services with lower latency and higher throughput.
+          </p>
+          <p className="lead">
+            My backend expertise spans Core Java, Spring Security, Hibernate, and REST APIs, with hands-on experience in Spring Cloud, API Gateway, and JWT authentication. I'm proficient across MySQL, Oracle, MongoDB, and DynamoDB using JPA/Hibernate, and comfortable with Docker, Kubernetes, Jenkins, and AWS (EC2, S3, RDS, IAM).
+          </p>
+          <p className="lead">
+            I also build with React, Angular, and JavaScript, delivering clean, testable code in Agile teams. Open to relocation and new opportunities where backend engineering and cloud-native systems are core to the product.
           </p>
         </motion.div>
 

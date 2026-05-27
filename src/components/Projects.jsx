@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 const Projects = () => {
   const ref = useRef(null)
@@ -11,34 +10,26 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'AI-Powered Code Review Platform',
-      description: 'Automated GitHub PR review tool evaluated on 650 PRs across 25 repositories, reducing manual review time by 35% through webhook-driven architecture with Redis queues and LLM-based validation.',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'LLM APIs'],
-      github: 'https://github.com/NavyanthReddy/code-review-ai-lite',
+      title: 'AWS Organizations Cache Service Platform',
+      description: 'Scalable caching platform for AWS Organizations data built with Kotlin, Java, Spring Boot, DynamoDB, SNS, and AWS Fargate. Features anti-entropy synchronization, event-driven workflows, multi-region deployment, and Lambda-based canary monitoring.',
+      technologies: ['Java', 'Kotlin', 'Spring Boot', 'DynamoDB', 'AWS Fargate', 'SNS', 'CDK'],
+      github: null,
       live: null
     },
     {
       id: 2,
-      title: 'Gesture-Controlled Virtual Mouse System',
-      description: 'Published research paper on computer vision-based hand gesture recognition achieving 95%+ accuracy with <50ms latency. Published in Springer ICIoT 2023 Conference Proceedings.',
-      technologies: ['Python', 'OpenCV', 'Computer Vision', 'MediaPipe'],
-      github: 'https://github.com/NavyanthReddy/gesture-controlled-virtual-mouse',
+      title: 'MERN Stack E-Commerce Application',
+      description: 'Full-stack e-commerce platform with secure JWT authentication, RBAC, Redux state management, payment gateway integration, Redis caching, and admin portal for user and product management.',
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Redis', 'AWS EC2'],
+      github: null,
       live: null
     },
     {
       id: 3,
-      title: 'Wellness Tracker',
-      description: 'Comprehensive health and wellness tracking application with activity monitoring, health metrics tracking, goal setting, and progress visualization.',
-      technologies: ['TypeScript', 'React', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/NavyanthReddy/Wellness-Tracker',
-      live: 'https://polite-otter-192c82.netlify.app'
-    },
-    {
-      id: 4,
-      title: 'Betting Ledger Microservices',
-      description: 'Enterprise-grade betting ledger system built with Spring Boot 3.x and Java 21. Features event-driven architecture and Kafka integration.',
-      technologies: ['Java', 'Spring Boot', 'Kafka', 'Docker'],
-      github: 'https://github.com/NavyanthReddy/Betting-Ledger-Microservices',
+      title: 'Air Travel Booking Application',
+      description: 'Airline ticket reservation system with Java 17, Spring Boot, Hibernate, and MySQL. Microservices architecture with MVC design, automated email notifications, Jenkins CI/CD, and AWS EC2 deployment.',
+      technologies: ['Java 17', 'Spring Boot', 'Hibernate', 'MySQL', 'JSP', 'Jenkins'],
+      github: null,
       live: null
     }
   ]
@@ -80,26 +71,30 @@ const Projects = () => {
                 ))}
               </div>
               
-              <div className="project-links">
-                {project.live && (
-                  <a 
-                    href={project.live} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                  >
-                    Live Demo
-                  </a>
-                )}
-                <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  GitHub
-                </a>
-              </div>
+              {(project.live || project.github) && (
+                <div className="project-links">
+                  {project.live && (
+                    <a 
+                      href={project.live} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                  {project.github && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

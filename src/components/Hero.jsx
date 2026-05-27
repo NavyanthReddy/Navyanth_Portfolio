@@ -21,7 +21,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
         >
-          Software Engineer at Comcast • Building scalable full-stack applications
+          Software Development Engineer at AWS • Java, Spring Boot & Microservices
         </motion.p>
         
         <motion.div 

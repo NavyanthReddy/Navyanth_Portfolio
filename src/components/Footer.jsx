@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="footer-text">
-            © 2025 Navyanth Bollareddy • Built with React
+            © 2026 Navyanth Bollareddy • Built with React
           </p>
         </div>
       </div>

@@ -44,19 +44,19 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'navyanthbollareddy@gmail.com',
-      link: 'mailto:navyanthbollareddy@gmail.com'
+      value: 'navybolla97@gmail.com',
+      link: 'mailto:navybolla97@gmail.com'
     },
     {
       icon: FaPhone,
       title: 'Phone',
-      value: '(512) 387-0728',
-      link: 'tel:+15123870728'
+      value: '(706) 461-9141',
+      link: 'tel:+17064619141'
     },
     {
       icon: FaMapMarkerAlt,
       title: 'Location',
-      value: 'New Jersey, USA',
+      value: 'Open for Relocation',
       link: '#'
     }
   ]

@@ -856,6 +856,13 @@ section {
   font-weight: 400;
 }
 
+.experience-project {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: var(--space-1);
+}
+
 .experience-meta {
   display: flex;
   flex-direction: column;

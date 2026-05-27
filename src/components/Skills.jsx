@@ -8,10 +8,26 @@ const Skills = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   const skills = {
-    Languages: ['JavaScript', 'TypeScript', 'Java', 'Python', 'SQL'],
-    Frameworks: ['React', 'Next.js', 'Spring Boot', 'Node.js', 'Express.js'],
-    Tools: ['Git', 'Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Jest', 'JUnit'],
-    Cloud: ['AWS', 'PostgreSQL', 'MongoDB', 'Redis', 'Kafka', 'OpenTelemetry']
+    'Languages & Certifications': [
+      'Java 17', 'Kotlin', 'JavaScript', 'TypeScript', 'Python', 'SQL', 'PL/SQL',
+      'Oracle Certified Java SE 17 Developer',
+      'AWS Solutions Architect – Associate'
+    ],
+    'Backend & Frameworks': [
+      'Spring Boot', 'Spring MVC', 'Spring Security', 'Hibernate', 'JPA',
+      'Node.js', 'Express.js', 'Microservices', 'Spring Cloud', 'API Gateway'
+    ],
+    'Frontend': [
+      'React.js', 'Angular', 'Vue.js', 'Redux', 'Bootstrap', 'React-Bootstrap', 'HTML5', 'CSS3'
+    ],
+    'Databases & Cloud': [
+      'MySQL', 'PostgreSQL', 'Oracle', 'MongoDB', 'DynamoDB', 'Amazon RDS', 'Redshift',
+      'AWS (EC2, S3, RDS, Lambda, Fargate, CloudWatch, SNS)', 'Azure', 'GCP'
+    ],
+    'DevOps & Security': [
+      'Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'Maven', 'Git', 'GitHub Actions',
+      'JWT', 'OAuth 2.0', 'RBAC', 'JUnit 4/5', 'Postman'
+    ]
   }
 
   return (

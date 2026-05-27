@@ -9,27 +9,43 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: 'Comcast',
-      role: 'Software Engineer',
+      company: 'Amazon Web Services (AWS)',
+      role: 'Software Development Engineer',
       period: 'Jul 2025 – Present',
-      location: 'Englewood Cliffs, NJ',
+      location: 'Jersey City, NJ',
+      project: 'AWS Organizations Cache Service Platform',
       bullets: [
-        'Developed customer self-service portal features using React, Spring Boot, and PostgreSQL, enabling 12K+ users and reducing support tickets by 28%',
-        'Implemented JWT authentication with Spring Security and Redis, securing 15+ API endpoints across 3 user role types',
-        'Optimized React bundle from 2.1MB to 850KB using code-splitting, improving Time to Interactive by 45%',
-        'Built reusable component library with 15+ React components, reducing development time by 40% across 6 teams'
+        'Developed a scalable caching platform for AWS Organizations data, enabling internal AWS Support services to access organization metadata with lower latency and higher TPS',
+        'Designed microservices-based cache services using Java/Kotlin and Spring Boot with Smithy-based data models and layered API-Service-DAO architecture',
+        'Built anti-entropy synchronization using DynamoDB TTL event streams and integrated SNS notifications for real-time event-driven workflows',
+        'Deployed containerized applications on AWS Fargate with ALB integration, multi-region deployments, and CI/CD pipelines using AWS CDK, Jenkins, and Docker',
+        'Configured CloudWatch alarms, automated rollback mechanisms, and Lambda-based canary monitoring to validate API and service health in production'
       ]
     },
     {
       company: 'Infosys',
-      role: 'Software Engineer',
+      role: 'Software Developer',
       period: 'Sep 2024 – May 2025',
       location: 'Atlanta, GA',
+      project: 'E-Commerce Application',
       bullets: [
-        'Developed customer onboarding system with React, Spring Boot, and MongoDB handling 2.5K+ monthly registrations with 99.7% success rate',
-        'Built REST API with 12 endpoints using Spring Boot, reducing data inconsistency errors by 50%',
-        'Engineered responsive React components across all viewports, increasing mobile conversion rate by 22%',
-        'Containerized application with Docker and Kubernetes, creating Helm charts for consistent deployments'
+        'Developed and deployed a scalable MERN stack e-commerce application with secure authentication, responsive UI, and efficient backend services',
+        'Built RESTful APIs with Node.js and Express.js, integrated MongoDB with Mongoose, and implemented JWT authentication with RBAC for customer and admin roles',
+        'Optimized performance using Redis caching, database indexing, and query optimization; integrated payment gateway APIs with transaction validation',
+        'Deployed on AWS EC2 using Docker and Kubernetes with Jenkins CI/CD pipelines, AWS S3 for static assets, and CloudWatch for observability'
+      ]
+    },
+    {
+      company: 'Accenture',
+      role: 'Java Software Engineer',
+      period: 'May 2021 – Nov 2022',
+      location: 'Remote',
+      project: 'Air Travel Booking Application',
+      bullets: [
+        'Developed an airline ticket reservation system using Java 17, Spring Boot, Hibernate, MySQL, and JSP with microservices architecture for scalability',
+        'Implemented MVC architecture with Hibernate ORM, server-side validations, and Spring Java Mail Sender for booking confirmation notifications',
+        'Built interactive UIs with JSPs, responsive HTML5/CSS layouts, and conducted API testing with Postman to ensure endpoint reliability',
+        'Configured Jenkins CI/CD pipelines and deployed on AWS EC2 with Maven, MySQL, and S3 for secure resource storage'
       ]
     }
   ]
@@ -59,6 +75,9 @@ const Experience = () => {
                 <div>
                   <h3 className="experience-role">{exp.role}</h3>
                   <p className="experience-company">{exp.company}</p>
+                  {exp.project && (
+                    <p className="experience-project">{exp.project}</p>
+                  )}
                 </div>
                 <div className="experience-meta">
                   <span className="experience-period">{exp.period}</span>
